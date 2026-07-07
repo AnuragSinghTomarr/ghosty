@@ -1,0 +1,43 @@
+# Paper Ink · Inverse — the warm-dark inversion of Paper Ink · Linen.
+# Linen ink flipped: warm charcoal ink paper (#2f2c25) with linen text (#efe9dd).
+# Same design system as V2, mirrored for a dark background:
+#   - chromatics: warm, lightened palette hues at ~5.5-6.9:1 (AA+, tight band)
+#   - brights 9-14: LIGHTER tier (~7.7-9:1) — on dark, emphasis goes lighter
+#     (the mirror of V2's darker-brights rule for light themes)
+#   - slot 8: de-emphasis dim #8f8775 (3.9:1) for comments/autosuggestions
+#   - selection #4a453a "raised ink" — linen text on it stays 7.9:1
+# Activate: theme = PaperInkInverse in the main config (currently PaperInkLinenV2).
+# fzf follows automatically — its colors are ANSI-indexed in ~/.zshrc, and the
+# selection-bar hex is picked per-theme at shell startup.
+
+background = 2f2c25
+foreground = efe9dd
+cursor-color = efe9dd
+cursor-text = 2f2c25
+selection-background = 4a453a
+selection-foreground = efe9dd
+
+# split / pane chrome on ink
+split-divider-color = 4a453a
+unfocused-split-fill = 29261f
+unfocused-split-opacity = 0.82
+
+# ── normal tier: warm light hues on ink (~5.5-6.9:1) ──
+palette = 0=#26231d
+palette = 1=#d69884
+palette = 2=#a4b982
+palette = 3=#d2b26a
+palette = 4=#8fafd2
+palette = 5=#c19bbd
+palette = 6=#83bcb0
+palette = 7=#c9c0ab
+# ── dim tier: de-emphasis (comments, autosuggestions) ──
+palette = 8=#8f8775
+# ── bright tier: LIGHTER (~7.7-9:1) — emphasis that reads on ink ──
+palette = 9=#e2a691
+palette = 10=#c1d3a0
+palette = 11=#e8cd8c
+palette = 12=#accae5
+palette = 13=#d7b7d3
+palette = 14=#a3d2c8
+palette = 15=#efe9dd

@@ -1,0 +1,89 @@
+# Ghostty Configuration
+# (stale `theme = "primary"` removed 2026-07-02 — no such theme existed; the live
+#  theme is set in ~/Library/Application Support/com.mitchellh.ghostty/config,
+#  which loads after this file and wins. Currently: PaperInkLinenV2.)
+# Tokyo Night Theme (matching Claude Code theme)
+
+# Font configuration
+font-family = Hack Nerd Font
+font-size = 14
+
+# Tokyo Night color scheme
+#background = 24283b
+#foreground = c0caf5
+
+# Cursor
+#cursor-color = c0caf5
+#cursor-text = 24283b
+#cursor-style = block
+#cursor-style-blink = true
+
+# Selection
+#selection-background = 364a82
+#selection-foreground = c0caf5
+
+# Normal colors
+#palette = 0=#1d202f
+#palette = 1=#f7768e
+#palette = 2=#9ece6a
+#palette = 3=#e0af68
+#palette = 4=#7aa2f7
+#palette = 5=#bb9af7
+#palette = 6=#7dcfff
+#palette = 7=#a9b1d6
+
+# Bright colors
+#palette = 8=#414868
+#palette = 9=#f7768e
+#palette = 10=#9ece6a
+#palette = 11=#e0af68
+#palette = 12=#7aa2f7
+#palette = 13=#bb9af7
+#palette = 14=#7dcfff
+#palette = 15=#c0caf5
+
+# Window settings
+window-padding-x = 8
+window-padding-y = 8
+#window-theme = dark
+
+# Terminal behavior
+scrollback-limit = 20000
+confirm-close-surface = false
+
+# Performance
+#unfocused-split-opacity = 0.7
+
+# Smooth animations and movement
+resize-overlay = never
+resize-overlay-position = center
+resize-overlay-duration = 100ms
+
+# Shell integration
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# Mouse and keyboard
+mouse-hide-while-typing = true
+copy-on-select = true
+click-repeat-interval = 500
+
+# Smooth scrolling
+mouse-scroll-multiplier = 3
+
+# Window behavior
+quit-after-last-window-closed = true
+
+# Visual enhancements
+window-decoration = true
+window-title-font-family = Hack Nerd Font
+window-save-state = always
+window-new-tab-position = end
+
+# Notifications
+desktop-notifications = true
+
+# Advanced features enabled by default
+
+# Custom keybindings (macOS style)
+# Note: Ghostty uses different keybind syntax, basic functionality works with defaults

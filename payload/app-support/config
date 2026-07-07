@@ -1,0 +1,80 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /Users/anuragsingh/Library/Application Support/com.mitchellh.ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Config syntax crash course
+# ==========================
+# # The config file consists of simple key-value pairs,
+# # separated by equals signs.
+# ── Paper Ink · font (CommitMono, primary) ──
+# empty value resets the fallback chain accumulated from the other config file,
+# so CommitMono becomes the PRIMARY font instead of being appended behind Iosevka/Hack.
+font-family =
+font-family = CommitMono
+# OpenType features (chosen in the font lab):
+#   calt = programming ligatures (=> != >=)   cv10 = l with tail   cv07 = alt zero   cv02 = single-story g
+# NOTE: Ghostty has no inline comments — a value must be alone on its line.
+font-feature = calt
+font-feature = cv10
+font-feature = cv07
+font-feature = cv02
+# window-padding-x = 2
+#
+# # Spacing around the equals sign does not matter.
+# # All of these are identical:
+# key=value
+# key= value
+# key =value
+# key = value
+#
+# # Any line beginning with a # is a comment. It's not possible to put
+# # a comment after a config option, since it would be interpreted as a
+# # part of the value. For example, this will have a value of "#123abc":
+# background = #123abc
+#
+# # Empty values are used to reset config keys to default.
+# key =
+#
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms
+#theme="Ayu"
+#theme="Ubuntu"
+#theme="Breadog"
+#theme="Aurora"
+# theme="Spacedust"   # ← previous dark theme. To revert: uncomment this line and delete the Paper Ink block below.
+font-size = 15
+
+# ══════════════════ Colors: theme ══════════════════
+# All colors live in a switchable theme file. To change themes, edit ONLY this
+# line (browse options with `ghostty +list-themes`). Keep NO explicit
+# palette/background/foreground below — those would override the theme.
+#   Custom themes (~/.config/ghostty/themes/):
+#     PaperInkLinen    — original light (V1)
+#     PaperInkLinenV2  — light + deep brights, visible selection, receding dim
+#     PaperInkInverse  — warm-dark inversion (linen text on ink paper)
+#   Try the dark one:     theme = PaperInkInverse   (then ⌘⇧, + new tab for fzf)
+#   Auto light/dark:      theme = light:PaperInkLinenV2,dark:PaperInkInverse
+theme = PaperInkLinenV2
+# Auto-repair unreadable fg/bg combos from TUIs (tmux/htop bars asking for
+# bright-white-on-color, which is ink 2:1 on a light theme). Conservative floor;
+# raise to 4.5 if you want colored status bars to flip to light text instead.
+minimum-contrast = 2.5
+# Padding strips inherit the adjacent cell background instead of flashing bg color.
+window-padding-color = extend
+# ════════════════════════════════════════════════════
+keybind = shift+enter=text:\n

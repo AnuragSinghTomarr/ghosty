@@ -1,0 +1,32 @@
+# Paper Ink · Linen — a warm light theme (charcoal ink on off-white linen paper).
+# Palette tuned for legibility on the light background: WCAG AA (chromatic ~5.3-5.9:1,
+# dim greys ~4.5:1) plus a damped Helmholtz-Kohlrausch perceptual correction so
+# saturated colors don't read lighter than muted ones.
+# Docs & methodology: ~/ghostty-theme-lab/PAPER-INK-SETUP.md
+#
+# A theme file is just a Ghostty config file. It may set colors/most options,
+# but NOT `theme` or `config-file` (silently ignored).
+
+background = efe9dd
+foreground = 2f2c25
+cursor-color = 2f2c25
+cursor-text = efe9dd
+selection-background = e1d9c6
+selection-foreground = 2f2c25
+
+palette = 0=#2f2c25
+palette = 1=#8d4236
+palette = 2=#51613a
+palette = 3=#775716
+palette = 4=#3b5d81
+palette = 5=#755074
+palette = 6=#346760
+palette = 7=#6e6757
+palette = 8=#6f695c
+palette = 9=#8b453b
+palette = 10=#51623a
+palette = 11=#76581a
+palette = 12=#3e5d80
+palette = 13=#765073
+palette = 14=#366761
+palette = 15=#2f2c25
