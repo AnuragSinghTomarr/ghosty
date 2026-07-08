@@ -76,5 +76,10 @@ theme = PaperInkLinenV2
 minimum-contrast = 2.5
 # Padding strips inherit the adjacent cell background instead of flashing bg color.
 window-padding-color = extend
+# Cursor accent — deliberate exception to the "no colors below the theme line"
+# rule above: overrides both themes' ink/linen cursor so the block is instantly
+# findable on light AND dark (gruvbox orange, matches the starship user segment).
+cursor-color = #d65d0e
+cursor-text = #efe9dd
 # ════════════════════════════════════════════════════
 keybind = shift+enter=text:\n
