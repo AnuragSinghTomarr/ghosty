@@ -81,5 +81,8 @@ window-padding-color = extend
 # findable on light AND dark (gruvbox orange, matches the starship user segment).
 cursor-color = #d65d0e
 cursor-text = #efe9dd
+# Slim orange bar instead of a full block; thickness in px (raise to 3 if too thin).
+cursor-style = bar
+adjust-cursor-thickness = 2
 # ════════════════════════════════════════════════════
 keybind = shift+enter=text:\n
